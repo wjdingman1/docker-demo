@@ -5,17 +5,17 @@ networks:
 
 services:
   client: 
-    image: "client:foo"
-    restart: always
+    image: 
+    restart: 
     environment: 
-      HOST: server
-      PORT: 3000
+      HOST: 
+      PORT: 
     networks:
       - demo
   server:
-    image: "server:foo"
-    restart: always
+    image: 
+    restart: 
     ports:
-      - "3000:3000"
+      - 
     networks:
       - demo

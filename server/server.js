@@ -2,6 +2,7 @@ const express = require("express");
 const http = require("http");
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 // Create three simple GET routes
 
@@ -22,4 +23,6 @@ app.use("/three", (req, res) => {
 
 http.createServer(app);
 
-app.listen(3000);
+app.listen(PORT);
+
+console.log(`Server listening on port ${PORT}`);
