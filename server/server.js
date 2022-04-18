@@ -1,5 +1,6 @@
 const express = require("express");
 const http = require("http");
+const port = process.env.POST || 3000;
 
 const app = express();
 
@@ -23,3 +24,5 @@ app.use("/three", (req, res) => {
 http.createServer(app);
 
 app.listen(3000);
+
+console.log(`~~ Server listening on port ${port} ~~`);
